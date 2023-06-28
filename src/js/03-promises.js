@@ -25,7 +25,7 @@ const formEl = document.querySelector('form')
 
 formEl.addEventListener('submit', (e)=>{
   e.preventDefault()
-
+  formEl.reset()
   setTimeout(() =>{
     createPromise(1, firstDelayInputEL.value)
   .then(({ position, delay }) => {
